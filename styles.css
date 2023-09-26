@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&display=swap');
+/*importar fuente de google*/
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+body {
+    /*margin-top: 0px;   SOBRA ESPECIFICAR QUE SON px*/
+    margin-top: 0p;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e6e4d9;
+    background-image: url('images/pattern.png');
+    /*IMAGEN DE FONDO PARA EL BODY*/
+    font-family: 'Lato', sans-serif;
+}
+
+/* ENCABEZADO */
+#mainheader {
+    background-color: #a593c2;
+    box-shadow: 0px 4px 50px;
+    /*sombra en el encabezado. El 3er valor difumina la sombra*/
+}
+
+button {
+    outline: none;
+    border: none;
+    background: #a593c2;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+#leftmenu {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+/*redondear todos los bordes de las fotos*/
+img {
+    border-radius: 5%;
+}
+
+nav {
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto 20px;
+}
+
+/* ESTILO DE CAJA BÚSQUEDA */
+.searchbox {
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+
+    
+}
+
+#main {
+    float: right;
+    width: 70%;
+    margin-bottom: 20px;
+
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+    
+}
+
+
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    background-color: #eae5f1;
+}
+
+nav>ul {
+    list-style-type: none;
+    /*sin viñetas*/
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li {
+    float: left;
+
+}
+
+nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    /*justifica el texto de los párrafos*/
+}
+
+li {
+    text-transform: capitalize;
+    /* pone en negrita los elementos de la lista de la izqda*/
+    line-height: 1.5;
+    /* (si quitamos el valor de px) aumenta espacio en blanco entre líneas respetando y haciéndolo proporcional al tamaño de la fuente*/
+}
+
+fieldset {
+    border-color: #a593c2;
+    border-width: 3px;
+    border-style: solid;
+}
+
+fieldset>legend {
+    color: #a593c2;
+}
+
+
+figcaption {
+    font-style: italic;
+    /*cursiva en la leyenda de debajo de la foto principal*/
+}
+
+p>label {
+    display: block;
+}
+
+input[type="email"],
+input[type="tel"],
+textarea {
+    border-radius: 7px;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus:invalid {
+    border-color: black;
+}
+
+input:required,
+textarea:required {
+    border-style: dashed;
+}
+
+h3 {
+    font-size: large;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: capitalize;
+    /*pone en MAY la 1ª letra de cada palabra*/  
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 4px;
+    /*aumenta espacio entre caracteres*/
+    font-family: 'Cookie', cursive;
+    
+}
+
+.promotion {
+    background-color: #23cea6;
+    color: #000000;
+    width: 450px;
+    text-align: center;
+    border: 10px ridge #a693c2;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+.promotion img {
+    width: 50%;
+}
+
+
+.promotion-purple {
+    background-color: #a693c2;
+    border-color: #23cea6;
+}
+
+
+#leftmenu > ul  {
+    color:  #23cea6; 
+    list-style: none;  
+}
+
+
+/* TRANSICIÓN RATÓN EN CABECERA*/
+nav > ul > li > a:hover {
+    color: #7b5ea9;
+    background: white;
+    font-size: 18px;
+    border-radius: 50%;
+  }
+
+/************
+Cards de SEASONALPIES
+*************/
+
+div.cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  div.card {
+    border: 1px solid gray;
+    background: #e6e4d9;
+    margin-bottom: 50px;
+    width: 100%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 15px;
+  }
+  
+
+/* SOMBRA VIOLETA DETRÁS DE CADA TARJETA*/
+
+  div.card.active {
+    box-shadow: 5px 5px 15px 10px #7b5ea9;
+   /* transición y tiempo se controlan a través de CSS, no de JS*/
+    transition-duration: 0.75s;
+  } 
+
+  
+  div.card a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  div.card h1 {
+    margin-top: 0.5rem;
+    /* la unidad rem significa «el tamaño de letra del elemento raíz» */
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  div.card img {
+    width: 100%;
+    border-radius: 1% 1% 1% 50%;
+  }
+  
+  div.card .image {
+    padding: 10px 10px 0px 10px;
+  }
+  
+  div.card .content {
+    padding: 10px 10px 0px 10px;
+    background: #f8f4f1;
+    margin-top: 4px;
+    border-top: 1px solid lightgray;
+    padding: 4px 10px 4px 10px;
+  }
+  
+  div.card .description {
+    font-style: italic;
+  }
+  
+  div.card .footer {
+    font-size: 14px;
+    font-weight: bold;
+    color: gray;
+    background: #f8f4f1;
+    padding: 4px 10px 4px 10px;
+  }
+
+
+  /************
+Aside MENÚ LATERAL TRANSICIONES
+*************/
+aside > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  aside > ul > li {
+    padding: 8px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    background: #24cfa6;
+    color: white;
+  }
+  
+  aside > ul > li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  aside > ul > li span {
+    opacity: 0;
+    padding-right: 60%;
+  }
+  
+  aside > ul > li:hover {
+    background: white;
+    color: #24cfa6;
+    transition: 0.5s;
+  }
+  
+  aside > ul > li:hover span {
+    opacity: 1;
+    transition: opacity 2s, padding-right;
+    padding-right: 0%;
+    font-weight: bold;
+    color: #a593c2;
+  }
+
+  /****************
+  ORDER
+  ****************/
+
+  /* FONDO FORMULARIO PEDIDOS */
+  .order {
+    background: #e6e4d9;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+input {
+    box-sizing: border-box;
+    /*-webkit-appearance: none;*/
+    border: none;
+    padding: 14px 12px 12px 12px;
+    margin: 5px 25px 10px 0px;
+}
+
+button {
+    margin: 5px 25px 10px 0px;
+}
+
+
+/* TAMAÑO Y PROPIEDADES DE VÍDEO/AUDIO DE 'ABOUT' */
+
+#main video {
+  width: 100%;
+  border-color:#23cea6;
+  border-style:double;
+  border-radius: 10%;
+}
+
+#main audio {
+  width: 100%;
+}

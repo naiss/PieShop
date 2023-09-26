@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf.-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!--ajusta ancho para pantallas pequeñas-->
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+    <title>Welcome to Bethany' Pie Shop!</title>
+    <meta name="author" content="Marina F.">
+    <meta name="description" content="Store front for Bethany's Pie Shop">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png"> <!--ICONO DE LA PÁGINA-->
+    <link rel="stylesheet" href="styles.css"> <!-- ESTILO DE LA PÁGINA-->
+
+</head>
+
+<body>
+    <header id="mainheader">
+        <nav>
+            <ul>
+                <li><img src="images/cake.svg" height="55" /></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pieoverview.html">All pies</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div style="width:1000px;margin-left: auto;margin-right: auto;">
+
+        <aside id="leftmenu">
+            <a href="index.html"><img src="images/bethanylogo.png" /></a>
+            <header>
+                <h4 style="text-align: center;">Browse our pies</h4>
+            </header>
+            <ul>
+                <li><a href="pieoverview.html">
+                        <div>All pies</div><span>11</span>
+                    </a></li>
+                <li><a href="cheesecakes.html">
+                        <div>Cheese cakes</div><span>3</span>
+                    </a></li>
+                <li><a href="fruitpies.html">
+                        <div>Fruit pies</div><span>6</span>
+                    </a></li>
+                <li><a href="seasonalpies.html">
+                        <div>Seasonal pies</div><span>2</span>
+                    </a></li>
+                <li><a href="#promos">Weekly promotion</a></li>
+                <li><a href="promotions.html">Permanent Promotions</a></li>
+            </ul>
+            <br>
+
+            <!-- CAJA BÚSQUEDA-->
+            <!-- <input type="search" class="searchbox" placeholder="Search our store"> -->
+            <FORM method=GET action="http://www.google.es/search">
+                <input type=hidden name=ie value=UTF-8 />
+                <INPUT TYPE=text id="s" name="q" value="" size="15" />
+                <INPUT type=submit id="x" name=btnG VALUE="Search" />
+            </FORM>
+        </aside>
+
+        <main id="main">
+            <article>
+
+                <header>
+                    <h1 style="font-size:35px;color:#a593c2">Welcome to Bethany's Pie Shop</h1>
+                </header>
+                <figure>
+                    <!--IMAGEN PRINCIPAL-->
+                    <img src="images/bethany-fullsize.jpg" width="600" alt="Bethany in her pie shop" />
+                    <figcaption>Bethany in her pie shop</figcaption>
+                </figure>
+
+                <h2>Our history</h2>
+                <p>
+                    For many years, <b>Bethany</b> has been baking the most delicious pies at her home. In 2013, we
+                    opened our first
+                    store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the
+                    world fell
+                    in love
+                    with the soft cakes, heavenly cheese cakes, spicy apple pies... <i>The store became a success in no
+                        time.</i>
+                    <br>In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger
+                    building.
+                    After receiving many requests, it became clear that our next step was making it possible to order
+                    pies from the
+                    comfort of your own home and from anywhere in the world. You are now looking at the result of this:
+                    our very own
+                    webstore, making it possible to order Bethany's delicious pies whenever you feel like it!
+                </p>
+                <p>
+                    Bethany is famous for using only the best ingredients. This way, we can make sure
+                    that our pies are absolutely the best.
+                </p>
+
+                <p>In the video below, you can see how we create our pies.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/btfvUNYFNC0"
+                    title="Authentic APPLE PIE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <br><br><br>
+                <p><i>Download our full <a href="downloads/Pricelist.pdf" download="Pricelist.pdf">price list</i></a>
+                </p>
+
+            </article>
+
+            <section id="promos">
+                <br><br><br>
+                <h3><u>Our weekly promotions</u></h3>
+                <h4>Cheese cake</h4>
+                $12.95 - serves 4<br>
+                <img src="https://gillcleerenpluralsight.blob.core.windows.net/files/cheesecake.jpg" width="500"
+                    alt="Cheese cake with strawberry" height="300" />
+
+                <h4>Apple pie</h4>
+                $14.95 - serves 6<br>
+                <img src="images/applepie.jpg" width="500" alt="Cheese cake with apples and cinnamon" height="300" />
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <p>Our address is:
+            <address>Bethany's Pie Shop - 3 Lymington Rd, Westgate-on-Sea CT8 8ES, United Kingdom</address>
+            </p>
+            <small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small>
+            <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
+            <p><small><a href="https://www.linkedin.com/in/marinafara/">Created by Marina F.</a></small></p>
+          </footer>
+
+       
+    </div>
+
+</body>
+
+</html>

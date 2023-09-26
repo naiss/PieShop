@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Bethany's Pie Shop!</title>
+  <meta name="author" content="Bethany's Pie Shop">
+  <meta name="description" content="Store front for Bethany's Pie Shop">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css"> <!-- ESTILO DE LA PÁGINA-->
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="mainheader">
+    <nav>
+      <ul>
+        <li><img src="images/cake.svg" height="55" /></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pieoverview.html">All pies</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div style="width:1000px;margin-left: auto;margin-right: auto;">
+    <aside id="leftmenu">
+      <a href="index.html"><img src="images/bethanylogo.png" /></a>
+      <header>
+        <h4 style="text-align: center;">Browse our pies</h4>
+      </header>
+      <ul>
+        <li><a href="pieoverview.html">
+            <div>All pies</div><span>11</span>
+          </a></li>
+        <li><a href="cheesecakes.html">
+            <div>Cheese cakes</div><span>3</span>
+          </a></li>
+        <li><a href="fruitpies.html">
+            <div>Fruit pies</div><span>6</span>
+          </a></li>
+        <li><a href="seasonalpies.html">
+            <div>Seasonal pies</div><span>2</span>
+          </a></li>
+        <li><a href="index.html#promos">Weekly promotion</a></li>
+        <li><a href="promotions.html">Permanent Promotions</a></li>
+      </ul>
+    </aside>
+    <main id="main">
+      <article>
+        <header>
+          <h1 style="font-size:35px;color:#a593c2">Welcome to Bethany's Pie Shop</h1>
+        </header>
+
+        <p>In the video below, you can see how we decorate our mini-cupcakes.</p>
+
+        <!--    <video src="media/baking.mp4" controls>
+          Your browser doesn't support Video
+        </video>-->
+
+        <!-- VÍDEO EN LOCAL -->
+
+
+        <video controls>
+          <!-- <video controls> si agregamos esa etiqueta, los controles de play, pause... aparecen directamente integrados en el vídeo -->
+          <source src="media/baking.mp4" type="video/mp4" />
+          <source src="media/baking.webm" type="video/webm" />
+          <track label="English" kind="subtitles" src="media/baking.vtt" srclang="en" default />
+          <!--en media/baking.vtt están los subtítulos que quiero introducir -->
+          <track label="Spanish" kind="subtitles" src="media/baking-es.vtt" srclang="es" />
+          Your browser doesn't support Video
+        </video>
+
+        <br><br>
+
+        <audio controls>
+          <!-- distintos formatos para que cada navegador use el que soporte -->
+          <source src="media/breadsandcake.wav" type="audio/wav" />
+          <source src="media/breadsandcake.mp3" type="audio/mp3" />
+          <source src="media/breadsandcake.ogg" type="audio/ogg" />
+          Your browser doesn't support audio
+        </audio>
+
+
+        <br><br>
+
+        <!-- MAPA -->
+        <h2>Where we are?</h2>
+
+        <map>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20322569.024127547!2d-34.568861380448304!3d51.356132997439666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d953aafcca611d%3A0x7a5efc943705816a!2sBethanys%20sandwich%20Bar%20%26%20cafe!5e0!3m2!1ses!2ses!4v1666264224080!5m2!1ses!2ses"
+            width=100% height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </map>
+
+      </article>
+    </main>
+
+    <footer>
+      <p>Our address is:
+      <address>Bethany's Pie Shop - 3 Lymington Rd, Westgate-on-Sea CT8 8ES, United Kingdom</address>
+      </p>
+      <small>&copy; 2020 Bethany's Pie Shop - All rights reserved</small>
+      <p>Contact us via <a href="mailto:info@bethanyspieshop.com">email</a></p>
+      <p><small><a href="https://www.linkedin.com/in/marinafara/">Created by Marina F.</a></small></p>
+    </footer>
+  </div>
+</body>
+
+</html>
